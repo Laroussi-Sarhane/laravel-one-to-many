@@ -1,0 +1,41 @@
+@import '~bootstrap/scss/bootstrap';
+header{
+    height: 75px;
+}
+
+.main-wrapper{
+    height: calc(100vh - 70px);
+
+}
+aside{
+    width: 180px;
+    ul{
+        list-style: none;
+        padding-left: 15px;
+        li{
+            line-height: 30px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 1.1rem;
+                &:hover{
+                    text-decoration: underline;
+                }
+
+            }
+        }
+    }
+}
+.crud-table{
+  td:first-child{
+    width: 400px;
+  }
+  input{
+    border:none;
+    outline:none ;
+  }
+}
+
+
+
+
