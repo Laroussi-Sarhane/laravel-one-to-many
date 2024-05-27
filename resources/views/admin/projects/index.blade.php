@@ -79,5 +79,8 @@
         const form= document.getElementById('form-edit-${id}')
         form.submit();
     }
+
+
+
   </script>
 @endsection
