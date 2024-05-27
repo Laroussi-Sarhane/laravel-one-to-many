@@ -12,7 +12,7 @@ class project extends Model
 
     //  protected $fillable= ['title', 'slug'];
     public function project(){
-        return $this->belongsTo(Project::class)
+        return $this->belongsTo(Project::class);
 
     }
 }
