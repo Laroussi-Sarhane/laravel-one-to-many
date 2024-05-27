@@ -6,6 +6,10 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Faker\Generator as faker;
 use App\Models\Project;
+use App\Models\tecnology;
+use App\Models\type;
+
+
 use App\functions\Helper;
 
 class ProjectTableSeeder extends Seeder
@@ -18,6 +22,7 @@ class ProjectTableSeeder extends Seeder
 
       for($i=0; $i<100; $i++){
         $new_project= new Project();
+        $new_project->tecnology_id = Project::inRandomOrder()->first()->id;
         $new_project->title = $faker->sentence();
         $new_project->slug = Helper::getSlug($new_project->title, Project::class);
         $new_project->text = $faker->paragraphs(3, true);
